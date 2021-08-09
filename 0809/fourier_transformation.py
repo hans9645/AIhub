@@ -6,6 +6,7 @@ img = cv2.imread('/Users/divertome/github_repository/AIhub-1/download.jpeg', 0)
 rows,cols=img.shape
 crow,ccol=rows//2, cols//2
 
+
 f=np.fft.fft2(img)
 fshift=np.fft.fftshift(f)
 magnitude_spectrum=20*np.log(np.abs(fshift))
