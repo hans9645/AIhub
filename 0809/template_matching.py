@@ -5,10 +5,10 @@ from matplotlib import pyplot as plt
 
 def template_matching():
     img = cv2.imread(
-        '/Users/divertome/github_repository/AIhub-1/nanoimage/11_Morphology_Transform_B.png', 0)
+        '/Users/divertome/github_repository/AIhub-1/nanoimage/18_Template_Matching_A.jpg', 0)
     img2=img.copy()
     template = cv2.imread(
-        '/Users/divertome/github_repository/AIhub-1/nanoimage/6_3_Bitwise_Operation_A.png', 0)
+        '/Users/divertome/github_repository/AIhub-1/nanoimage/18_Template_Matching_B.png', 0)
     w,h=template.shape[::-1]
     methods=['cv2.TM_CCOEFF_NORMED']
 
